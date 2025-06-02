@@ -1,0 +1,70 @@
+/* Styling for the modal content */
+.popup-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 1000px;
+    display: none;
+    z-index: 9999;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Popup inner (two columns) */
+.popup-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left side with image */
+.popup-left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Right side with text */
+.popup-right {
+    padding-left: 20px;
+    max-width: 500px;
+}
+
+.popup-right h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup-right p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.launch-project {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF6F61;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/* Style for closing the modal */
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
